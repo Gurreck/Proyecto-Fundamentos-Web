@@ -1,0 +1,103 @@
+html, body
+{
+    margin: 0px 10px 0px 10px;/* Comentario en CSS*/
+    padding: 0px;/*Los margenes son reducidos a 0 */
+    font-family: Segoe UI, Century Gothic, Verdana, Arial;
+    background: #F9F9F9;
+}
+
+.cajaSeccion{
+    background: #388087;
+    margin: 0px 10px 0px 10px;/* Comentario en CSS*/
+    padding: 10px 10px 10px 10px;
+    border-radius: 15px;
+    width: 90%;
+} 
+
+.cajaSeccionInfo{
+    background: #f6f6f2;
+    border-radius: 15px;
+    padding: 10px 10px 10px 15px;
+    margin: 20px 10px 0px 10px;/* Comentario en CSS*/
+}
+h4{
+    margin-left: 2%;
+}
+
+input,label{
+    margin: 0px 0px 5px 0px;
+    display: block;
+}
+
+input{
+    border:none;
+    box-shadow: 0px 2px 2px 0px rgba(0,0,0,.8);
+    border-radius: 20px;
+    padding: 10px 15px 10px 15px;
+    height:fit-content;
+}
+
+label{
+    font-weight: 600;
+    margin-left:15px;
+}
+
+label:after { content: ": " }
+
+.defaultInput:hover{
+    box-shadow: 0px 3px 3px 0px #388087;
+}
+
+.defaultInput:focus{
+    border: none;
+    box-shadow: none;
+    outline-color: #388087;
+    border:3px solid  #388087;
+}
+
+.disabledInput{
+    background-color: rgba(100, 100, 100, 0.164);
+}
+
+.readInput:hover{
+    box-shadow: 0px 3px 3px 0px #b1433b;
+}
+
+.readInput:focus{
+    box-shadow: none;
+    outline-color: #b1433b;
+    border:3px solid  #b1433b;
+}
+/* Comienza tabla */
+#cajaTabla{
+    align-items: center;
+    
+}
+table{
+    border-collapse: collapse;
+    font-size: 12px;
+    position: relative;
+    width: 80%;
+    text-align: center;
+}
+
+thead{
+    font-weight: bold;
+    background: #DBEAF9;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+td{
+    border: 1px solid #CCC;
+    padding: 5px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #ffd480;
+
+}
+ 
+tbody tr:nth-child(even){
+    background-color:  #ffeecc;
+}

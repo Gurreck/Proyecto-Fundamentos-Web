@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Mosqueteros
+    </title>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+</head>
+<body>
+    <h1 class="center">Plantilla Mosqueteros</h1>
+        <div class="cajaSeccion">
+            <h2>Elementos basicos de Forms</h2>
+            <div class="cajaSeccionInfo">
+                <h3>Inputs</h3>
+                <div>
+                    <h4>Default</h4>
+                    <label for="name">Nombre</label>
+                    <input class="defaultInput" type="text" id="name" name="name" value="Daniel Gurreck" required>
+                </div>
+                <div>
+                    <h4>Disabled</h4>
+                    <label for="pais">País</label>
+                    <input class="disabledInput" type="text" id="pais" name="pais" value="Costa Rica" disabled>
+                </div>
+                <div>
+                    <h4>Read-Only</h4>
+                    <label for="pais">Cédula</label>
+                    <input class="readInput" type="text" id="pais" name="pais" value="118140586" readonly tool>
+                </div>
+        </div>
+        <div id="cajaTabla" class="cajaSeccionInfo">
+            <table class="tabla" id="tabladatos">
+                <thead>
+                    <td>NRC</td><td>Curso</td><td>Docente</td><td>Horario</td><td>Estado</td><td>Tipo</td><td>Accion</td>
+                </thead>
+                <tbody id="cuerpotabla">
+                    <tr id="f1">
+                        <td>49908</td><td>Programacion IV</td><td>Nicolas Gutierrez</td><td>Diurno</td><td>Activo</td><td>Carrera</td><td> <input type="button" class="botonEliminar"  name="btn_eliminar" title="Eliminar" value="Eliminar" onclick="eliminarFila(this)"> </td>
+                    </tr>
+                    <tr id="f2">
+                        <td>43457</td><td>Modelado 3D</td><td>Pedro Gamboa</td><td>Nocturno</td><td>Inactivo</td><td>General</td><td> <input type="button" class="botonEliminar"  name="btn_eliminar" title="Eliminar" value="Eliminar" onclick="eliminarFila(this)"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+</div>
+    
+    
+
+</body>
+</html>
