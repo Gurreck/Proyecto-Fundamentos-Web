@@ -1,9 +1,18 @@
 html, body
 {
-    margin: 0px 10px 0px 10px;/* Comentario en CSS*/
+    margin: 0px 10px 100px 10px;/* Comentario en CSS*/
     padding: 0px;/*Los margenes son reducidos a 0 */
     font-family: Segoe UI, Century Gothic, Verdana, Arial;
     background: #F9F9F9;
+
+    width:80%;
+    margin-left:auto;
+    margin-right:auto;
+      
+}
+
+.row{
+    display: flex;
 }
 
 .cajaSeccion{
@@ -11,14 +20,14 @@ html, body
     margin: 0px 10px 0px 10px;/* Comentario en CSS*/
     padding: 10px 10px 10px 10px;
     border-radius: 15px;
-    width: 90%;
 } 
 
 .cajaSeccionInfo{
     background: #f6f6f2;
     border-radius: 15px;
     padding: 10px 10px 10px 15px;
-    margin: 20px 10px 0px 10px;/* Comentario en CSS*/
+    margin: 20px 10px 0px 10px;
+    /* Comentario en CSS*/
 }
 h4{
     margin-left: 2%;
@@ -31,8 +40,8 @@ input,label{
 
 input{
     border:none;
-    box-shadow: 0px 2px 2px 0px rgba(0,0,0,.8);
-    border-radius: 20px;
+    /* box-shadow: 0px 2px 2px 0px rgba(0,0,0,.8); */
+    border-radius: 5px;
     padding: 10px 15px 10px 15px;
     height:fit-content;
 }
@@ -52,7 +61,7 @@ label:after { content: ": " }
     border: none;
     box-shadow: none;
     outline-color: #388087;
-    border:3px solid  #388087;
+    border:1px solid  #388087;
 }
 
 .disabledInput{
@@ -66,7 +75,7 @@ label:after { content: ": " }
 .readInput:focus{
     box-shadow: none;
     outline-color: #b1433b;
-    border:3px solid  #b1433b;
+    border:1px solid  #b1433b;
 }
 /* Comienza tabla */
 #cajaTabla{
@@ -101,3 +110,110 @@ tbody tr:nth-child(odd){
 tbody tr:nth-child(even){
     background-color:  #ffeecc;
 }
+
+/* Botones */
+
+button {
+    cursor: pointer;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    margin: 4px 2px;
+    padding: 10px 16px;
+    min-width: 50px;
+    min-height: 30px;
+    font-size: 16px;
+    width: fit-content;
+    height: fit-content;
+}
+
+.btn-primary{
+    background-color: #388087;
+    color: #fff;
+}
+.btn-primary:hover{
+    background-color: #296c72;
+}
+
+.btn-secondary{
+    background-color: #6fb3b8;
+    color: #fff;
+}
+.btn-secondary:hover{
+    background-color: #579ea3;
+}
+
+.btn-light{
+    background-color: #badfe7;
+    color: #fff;
+}
+
+.btn-light:hover{
+    background-color: #a1dae7;
+}
+.btn-success{
+    background-color: #c6f6d5;
+    color: #276749;
+}
+
+.btn-success:hover{
+    background-color: #9fe9b6;
+}
+
+.btn-error{
+    background-color: #f6c6c6;
+    color: #672727;
+}
+
+.btn-error:hover{
+    background-color: #ecadad;
+}
+
+
+/* Bottons sizes */
+.btn-sm{
+    font-size: 16px;
+}
+.btn-md{
+    font-size: 24px;
+}
+.btn-lg{
+    font-size: 32px;
+}
+
+/* Dropdown Button */
+.btn-drop:after{
+    content: '▼';
+    margin-left: 10px;
+    font-size: max(20px, 20px);;
+}
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
