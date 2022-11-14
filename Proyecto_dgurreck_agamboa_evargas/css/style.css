@@ -222,6 +222,14 @@ button {
     color: #f1f1f1;    
 }
 
+    /* Split dropdown */
+    .splitDropdown {
+        font-size: 32px;
+        background-color: #388087;
+        color: #fff;
+        width: 280px;
+        border-radius: 5px;
+    }
   /* Menú lateral */
   .menuLateral {
     height: 100%;
