@@ -115,7 +115,6 @@ tbody tr:nth-child(even){
 
 button {
     cursor: pointer;
-    border-radius: 5px;
     border: none;
     outline: none;
     margin: 4px 2px;
@@ -181,6 +180,10 @@ button {
     font-size: 32px;
 }
 
+.btn-rounded {
+    border-radius: 5px;
+}
+
 /* Dropdown Button */
 .btn-drop:after{
     content: '▼';
@@ -222,14 +225,44 @@ button {
     color: #f1f1f1;    
 }
 
-    /* Split dropdown */
-    .splitDropdown {
-        font-size: 32px;
-        background-color: #388087;
-        color: #fff;
-        width: 280px;
-        border-radius: 5px;
-    }
+/* Split dropdown */ 
+.btn-splitDropdown {
+    padding: 16px;
+    border: none;
+    outline: none;
+    margin: 0;
+  }
+
+  .splitDropdown {
+    position: absolute;
+    display: inline-block;
+  }
+  
+  .splitDropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    z-index: 1;
+  }
+  
+  .splitDropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .splitDropdown-content a:hover {background-color: #ddd}
+  
+  .splitDropdown:hover .splitDropdown-content {
+    display: block;
+  }
+  
+  .btn-splitDropdown:hover, .splitDropdown:hover {
+    background-color: #0b7dda;
+  }
+
   /* Menú lateral */
   .menuLateral {
     height: 100%;
