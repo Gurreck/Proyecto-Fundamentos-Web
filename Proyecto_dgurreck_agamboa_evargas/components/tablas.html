@@ -25,9 +25,9 @@
 
     <h1 class="center">Plantilla Mosqueteros</h1>
     <div class="cajaSeccion">
-        <h2>Tablas</h2>
+        <h2 class="tituloB">Tabla normal</h2>
         <div id="cajaTabla" class="cajaSeccionInfo">
-            <table class="tabla" id="tabladatos">
+            <table class="tabla-normal" id="tabladatos">
                 <thead>
                     <td>NRC</td>
                     <td>Curso</td>
@@ -37,7 +37,47 @@
                     <td>Tipo</td>
                     <td>Accion</td>
                 </thead>
-                <tbody id="cuerpotabla">
+                <tbody id="cuerpotabla-normal">
+                    <tr id="f1">
+                        <td>49908</td>
+                        <td>Programacion IV</td>
+                        <td>Nicolas Gutierrez</td>
+                        <td>Diurno</td>
+                        <td>Activo</td>
+                        <td>Carrera</td>
+                        <td>
+                            <div>
+                                <input type="button" class="botonEliminar" name="btn_eliminar" title="Eliminar"
+                                value="Eliminar" onclick="eliminarFila(this)">
+                            </div> 
+                        </td>
+                    </tr>
+                    <tr id="f2">
+                        <td>43457</td>
+                        <td>Modelado 3D</td>
+                        <td>Pedro Gamboa</td>
+                        <td>Nocturno</td>
+                        <td>Inactivo</td>
+                        <td>General</td>
+                        <td> <input type="button" class="botonEliminar" name="btn_eliminar" title="Eliminar"
+                                value="Eliminar" onclick="eliminarFila(this)"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <h2 class="tituloB">Tabla rayada</h2>
+        <div id="cajaTabla" class="cajaSeccionInfo">
+            <table class="tabla-rayada" id="tabladatos">
+                <thead>
+                    <td>NRC</td>
+                    <td>Curso</td>
+                    <td>Docente</td>
+                    <td>Horario</td>
+                    <td>Estado</td>
+                    <td>Tipo</td>
+                    <td>Accion</td>
+                </thead>
+                <tbody id="cuerpotabla-rayada">
                     <tr id="f1">
                         <td>49908</td>
                         <td>Programacion IV</td>

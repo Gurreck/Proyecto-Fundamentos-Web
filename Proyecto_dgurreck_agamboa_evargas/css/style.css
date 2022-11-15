@@ -11,6 +11,11 @@ html, body
       
 }
 
+.tituloB {
+    color: #f1f1f1;
+    margin-left:10px;
+}
+
 .row{
     display: flex;
 }
@@ -90,26 +95,46 @@ table{
     text-align: center;
 }
 
-thead{
+.tabla-rayada thead{
     font-weight: bold;
     background: #DBEAF9;
     text-align: center;
     text-transform: uppercase;
 }
 
-td{
+.tabla-rayada td{
     border: 1px solid #CCC;
     padding: 5px;
+    text-align: center;
 }
 
-tbody tr:nth-child(odd){
-    background-color: #ffd480;
-
+.tabla-rayada tbody tr:nth-child(odd){
+    background-color: #75bcc3;
 }
  
-tbody tr:nth-child(even){
-    background-color:  #ffeecc;
+.tabla-rayada tbody tr:nth-child(even){
+    background-color:  #a1d4d9;
 }
+.botonEliminar{    
+    margin: auto;
+}
+.tabla-normal thead{
+    font-weight: bold;
+    background: #DBEAF9;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.tabla-normal td{
+    border: 1px solid rgb(156, 138, 138);
+    padding: 5px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.tabla-normal tbody tr{
+    background-color: #a1d4d9;
+} 
 
 /* Botones */
 
