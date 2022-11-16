@@ -27,6 +27,7 @@
     <div class="cajaSeccion">
         <h2 class="tituloB">Elementos basicos de Forms</h2>
         <div class="cajaSeccionInfo">
+            <form action="javascript:alert('Enviado');">
             <h3>Inputs</h3>
             <div>
                 <h4>Default</h4>
@@ -105,7 +106,6 @@
                 </label>
             </div>
 
-
             <h3>Radio button</h3>
             <div class="radio-content">
                 <label class="container">Uno
@@ -125,7 +125,11 @@
                     <span class="checkmarkRb"></span>
                 </label>
             </div>
-
+                <h3>Botones</h3>
+                <button type="submit" class="btn-primary btn-rounded" value="Submit">Submit</button>
+                <button type="reset" class="btn-primary btn-rounded" value="Reset">Reset</button>
+                <button type="button" onclick="javascript:alert('Cancelado');" class="btn-primary btn-rounded" value="Cancel"> Cancel</button>
+            </form>             
         </div>
 
     </div>
