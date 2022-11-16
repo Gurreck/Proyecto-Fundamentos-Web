@@ -82,6 +82,15 @@ label:after { content: ": " }
     outline-color: #b1433b;
     border:1px solid  #b1433b;
 }
+
+.defaultSelect{
+    border:none;
+    /* box-shadow: 0px 2px 2px 0px rgba(0,0,0,.8); */
+    border-radius: 5px;
+    padding: 10px 15px 10px 15px;
+}
+
+
 /* Comienza tabla */
 #cajaTabla{
     align-items: center;
