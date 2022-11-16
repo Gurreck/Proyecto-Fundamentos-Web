@@ -1,90 +1,97 @@
-html, body
-{
-    margin: 0px 10px 100px 10px;/* Comentario en CSS*/
-    padding: 0px;/*Los margenes son reducidos a 0 */
+html,
+body {
+    margin: 0px 10px 100px 10px;
+    /* Comentario en CSS*/
+    padding: 0px;
+    /*Los margenes son reducidos a 0 */
     font-family: Segoe UI, Century Gothic, Verdana, Arial;
     background: #F9F9F9;
 
-    width:80%;
-    margin-left:auto;
-    margin-right:auto;
-      
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .tituloB {
     color: #f1f1f1;
-    margin-left:10px;
+    margin-left: 10px;
 }
 
-.row{
+.row {
     display: flex;
 }
 
-.cajaSeccion{
+.cajaSeccion {
     background: #388087;
-    margin: 0px 10px 0px 10px;/* Comentario en CSS*/
+    margin: 0px 10px 0px 10px;
+    /* Comentario en CSS*/
     padding: 10px 10px 10px 10px;
     border-radius: 15px;
-} 
+}
 
-.cajaSeccionInfo{
+.cajaSeccionInfo {
     background: #f6f6f2;
     border-radius: 15px;
     padding: 10px 10px 10px 15px;
     margin: 20px 10px 0px 10px;
     /* Comentario en CSS*/
 }
-h4{
+
+h4 {
     margin-left: 2%;
 }
 
-input,label{
+input,
+label {
     margin: 0px 0px 5px 0px;
     display: block;
 }
 
-input{
-    border:none;
+input {
+    border: none;
     /* box-shadow: 0px 2px 2px 0px rgba(0,0,0,.8); */
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
-    height:fit-content;
+    height: fit-content;
 }
 
-label{
+label {
     font-weight: 600;
-    margin-left:15px;
+    margin-left: 15px;
 }
 
-label:after { content: ": " }
+label:after {
+    content: ": "
+}
 
-.defaultInput:hover{
+.defaultInput:hover {
     box-shadow: 0px 3px 3px 0px #388087;
 }
 
-.defaultInput:focus{
+.defaultInput:focus {
     border: none;
     box-shadow: none;
     outline-color: #388087;
-    border:1px solid  #388087;
+    border: 1px solid #388087;
 }
 
-.disabledInput{
+.disabledInput {
     background-color: rgba(100, 100, 100, 0.164);
 }
 
-.readInput:hover{
+.readInput:hover {
     box-shadow: 0px 3px 3px 0px #b1433b;
 }
 
-.readInput:focus{
+.readInput:focus {
     box-shadow: none;
     outline-color: #b1433b;
-    border:1px solid  #b1433b;
+    border: 1px solid #b1433b;
 }
 
-.defaultSelect{
-    border:none;
+.defaultSelect {
+    border: none;
     /* box-shadow: 0px 2px 2px 0px rgba(0,0,0,.8); */
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
@@ -94,11 +101,12 @@ label:after { content: ": " }
 
 
 /* Comienza tabla */
-#cajaTabla{
+#cajaTabla {
     align-items: center;
-    
+
 }
-table{
+
+table {
     border-collapse: collapse;
     font-size: 12px;
     position: relative;
@@ -106,46 +114,48 @@ table{
     text-align: center;
 }
 
-.tabla-rayada thead{
+.tabla-rayada thead {
     font-weight: bold;
     background: #DBEAF9;
     text-align: center;
     text-transform: uppercase;
 }
 
-.tabla-rayada td{
+.tabla-rayada td {
     border: 1px solid #CCC;
     padding: 5px;
     text-align: center;
 }
 
-.tabla-rayada tbody tr:nth-child(odd){
+.tabla-rayada tbody tr:nth-child(odd) {
     background-color: #75bcc3;
 }
- 
-.tabla-rayada tbody tr:nth-child(even){
-    background-color:  #a1d4d9;
+
+.tabla-rayada tbody tr:nth-child(even) {
+    background-color: #a1d4d9;
 }
-.botonEliminar{    
+
+.botonEliminar {
     margin: auto;
 }
-.tabla-normal thead{
+
+.tabla-normal thead {
     font-weight: bold;
     background: #DBEAF9;
     text-align: center;
     text-transform: uppercase;
 }
 
-.tabla-normal td{
+.tabla-normal td {
     border: 1px solid rgb(156, 138, 138);
     padding: 5px;
     text-align: center;
     vertical-align: middle;
 }
 
-.tabla-normal tbody tr{
+.tabla-normal tbody tr {
     background-color: #a1d4d9;
-} 
+}
 
 /* Botones */
 
@@ -162,64 +172,70 @@ button {
     height: fit-content;
 }
 
-.btn-primary{
+.btn-primary {
     background-color: #388087;
     color: #fff;
 }
-.btn-primary:hover{
+
+.btn-primary:hover {
     background-color: #296c72;
 }
 
-.btn-secondary{
+.btn-secondary {
     background-color: #6fb3b8;
     color: #fff;
 }
-.btn-secondary:hover{
+
+.btn-secondary:hover {
     background-color: #579ea3;
 }
 
-.btn-light{
+.btn-light {
     background-color: #badfe7;
     color: #fff;
 }
 
-.btn-light:hover{
+.btn-light:hover {
     background-color: #a1dae7;
 }
-.btn-success{
+
+.btn-success {
     background-color: #c6f6d5;
     color: #276749;
 }
 
-.btn-success:hover{
+.btn-success:hover {
     background-color: #9fe9b6;
 }
 
-.btn-error{
+.btn-error {
     background-color: #f6c6c6;
     color: #672727;
 }
 
-.btn-error:hover{
+.btn-error:hover {
     background-color: #ecadad;
 }
 
 /* Btn group */
 .group {
-    display: inline-flex;    
-  }
+    display: inline-flex;
+}
+
 .btn-group {
     margin: 0;
-  }
+}
 
 /* Bottons sizes */
-.btn-sm{
+.btn-sm {
     font-size: 16px;
 }
-.btn-md{
+
+.btn-md {
     font-size: 24px;
 }
-.btn-lg{
+
+.btn-lg {
     font-size: 32px;
 }
 
@@ -228,91 +244,99 @@ button {
 }
 
 /* Dropdown Button */
-.btn-drop:after{
+.btn-drop:after {
     content: '▼';
     margin-left: 10px;
-    font-size: max(20px, 20px);;
+    font-size: max(20px, 20px);
+    ;
 }
-  
-  /* The container <div> - needed to position the dropdown content */
-  .dropdown {
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
     position: relative;
     display: inline-block;
-  }
-  
-  /* Dropdown Content (Hidden by Default) */
-  .dropdown-content {
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  /* Links inside the dropdown */
-  .dropdown-content a {
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
-  
-  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
-  .show {display:block;}
-
-  .tituloMenu {    
-    color: #f1f1f1;    
 }
 
-/* Split dropdown */ 
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
+.tituloMenu {
+    color: #f1f1f1;
+}
+
+/* Split dropdown */
 .btn-splitDropdown {
     padding: 16px;
     border: none;
     outline: none;
     margin: 0;
-  }
+}
 
-  .splitDropdown {
+.splitDropdown {
     position: absolute;
     display: inline-block;
-  }
-  
-  .splitDropdown-content {
+}
+
+.splitDropdown-content {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
     min-width: 160px;
     z-index: 1;
-  }
-  
-  .splitDropdown-content a {
+}
+
+.splitDropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-  }
-  
-  .splitDropdown-content a:hover {background-color: #ddd}
-  
-  .splitDropdown:hover .splitDropdown-content {
-    display: block;
-  }
-  
-  .btn-splitDropdown:hover, .splitDropdown:hover {
-    background-color: #0b7dda;
-  }
+}
 
-  /* Menú lateral */
-  .menuLateral {
+.splitDropdown-content a:hover {
+    background-color: #ddd
+}
+
+.splitDropdown:hover .splitDropdown-content {
+    display: block;
+}
+
+.btn-splitDropdown:hover,
+.splitDropdown:hover {
+    background-color: #0b7dda;
+}
+
+/* Menú lateral */
+.menuLateral {
     height: 100%;
     width: 250px;
     position: fixed;
     z-index: 1;
-    top:0;
+    top: 0;
     left: 0;
     background-color: #296c72;
     overflow-x: hidden;
@@ -321,7 +345,10 @@ button {
 
 /*Checkbox y RadioButton*/
 /* The container */
-.radio-content label:after, .checkbox-content label:after { content: "" } 
+.radio-content label:after,
+.checkbox-content label:after {
+    content: ""
+}
 
 .container {
     display: block;
@@ -331,17 +358,18 @@ button {
     cursor: pointer;
     font-size: 22px;
 
-  }
-  
-  /* Hide the browser's default radio button */
-  .container input {
+}
+
+/* Hide the browser's default radio button */
+.container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-  }
-  /*Este*/
-  /* Create a custom radio button */
-  .checkmarkRb {
+}
+
+/*Este*/
+/* Create a custom radio button */
+.checkmarkRb {
     position: absolute;
     top: 0;
     left: 0;
@@ -349,51 +377,57 @@ button {
     width: 25px;
     background-color: #eee;
     border-radius: 50%;
-  }
-  /* Create a custom checkbox */
-  .checkmarkCh {
+}
+
+/* Create a custom checkbox */
+.checkmarkCh {
     position: absolute;
     top: 0;
     left: 0;
     height: 25px;
     width: 25px;
     background-color: #eee;
-  }
-  
-  /* On mouse-over, add a grey background color */
-  .container:hover input ~ .checkmarkRb, .container:hover input ~ .checkmarkCh {
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input~.checkmarkRb,
+.container:hover input~.checkmarkCh {
     background-color: #ccc;
-  }
-  
-  
-  /* When the radio button is checked, add a blue background */
-  .container input:checked ~ .checkmarkRb, .container input:checked ~ .checkmarkCh {
+}
+
+
+/* When the radio button is checked, add a blue background */
+.container input:checked~.checkmarkRb,
+.container input:checked~.checkmarkCh {
     background-color: #75bcc3;
-  }
-  
-  /* Create the indicator (the dot/circle - hidden when not checked) */
-  .checkmarkRb:after, .checkmarkCh:after {
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmarkRb:after,
+.checkmarkCh:after {
     content: "";
     position: absolute;
     display: none;
-  }
-  
-  /* Show the indicator (dot/circle) when checked */
-  .container input:checked ~ .checkmarkRb:after, .container input:checked ~ .checkmarkCh:after {
+}
+
+/* Show the indicator (dot/circle) when checked */
+.container input:checked~.checkmarkRb:after,
+.container input:checked~.checkmarkCh:after {
     display: block;
-  }
-  
-  /* Style the indicator (dot/circle) */
-  .container .checkmarkRb:after {
-       top: 9px;
-      left: 9px;
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: white;
-  }
-  /* Style the checkmark/indicator */
-  .container .checkmarkCh:after {
+}
+
+/* Style the indicator (dot/circle) */
+.container .checkmarkRb:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmarkCh:after {
     left: 9px;
     top: 5px;
     width: 5px;
@@ -403,7 +437,7 @@ button {
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
-  }
+}
 
 /* Los links de navegacion */
 .menuLateral a {
@@ -413,24 +447,25 @@ button {
     color: #f1f1f1;
     display: block;
 }
+
 .menuLateral hr {
     width: 200px;
 }
 
 .menuLateral a:hover {
-	color: #ccc5c5;
+    color: #ccc5c5;
 }
 
-  /* Style the tab */
-  .tab {
+/* Style the tab */
+.tab {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
-  }
-  
-  
-  /* Style the buttons that are used to open the tab content */
-  .tab button {
+}
+
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
     background-color: inherit;
     float: left;
     border: none;
@@ -438,27 +473,27 @@ button {
     cursor: pointer;
     padding: 14px 16px;
     transition: 0.3s;
-  }
-  
-  /* Change background color of buttons on hover */
-  .tab button:hover {
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
     background-color: #ddd;
-  }
-  
-  /* Create an active/current tablink class */
-  .tab button.active {
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
     background-color: #ccc;
-  }
-  
-  /* Style the tab content */
-  .tabcontent {
+}
+
+/* Style the tab content */
+.tabcontent {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-  }
+}
 
-  .wrapper {
+.wrapper {
     width: 500px;
 }
 
@@ -475,47 +510,49 @@ button {
     height: 22px;
     background-color: #388087;
     border-radius: 3px;
-    
+
     transition: width 500ms ease-in-out;
 }
 
-ul, ol {
+ul,
+ol {
     padding: 8px 30px;
     border: 1px solid #ddd;
     border-radius: 12px;
     /* width: fit-content; */
 }
+
 ul.a {
     list-style-type: circle;
     /* border-color: #296c72; */
-  }
-  
-  ul.b {
+}
+
+ul.b {
     list-style-type: square;
-  }
-  
-  ol.c {
+}
+
+ol.c {
     list-style-type: upper-roman;
-  }
-  
-  ol.d {
+}
+
+ol.d {
     list-style-type: lower-alpha;
-  }
+}
 
 
 
 /* Opciones Generales */
-.mostrar{
+.mostrar {
     display: block;
 }
-.ocultar{
+
+.ocultar {
     display: none;
 }
 
 .grid {
     display: grid;
-  gap: 1rem;
-  grid-auto-flow: column;
-  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
-  }
-
+    gap: 1rem;
+    grid-auto-flow: column;
+    grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+}

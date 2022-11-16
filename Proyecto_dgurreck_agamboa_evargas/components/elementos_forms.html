@@ -28,108 +28,109 @@
         <h2 class="tituloB">Elementos basicos de Forms</h2>
         <div class="cajaSeccionInfo">
             <form action="javascript:alert('Enviado');">
-            <h3>Inputs</h3>
-            <div>
-                <h4>Default</h4>
-                <label for="name">Nombre</label>
-                <input class="defaultInput" type="text" id="name" name="name" value="Daniel Gurreck" required>
-            </div>
-            <div>
-                <h4>Disabled</h4>
-                <label for="pais">País</label>
-                <input class="disabledInput" type="text" id="pais" name="pais" value="Costa Rica" disabled>
-            </div>
-            <div>
-                <h4>Read-Only</h4>
-                <label for="pais">Cédula</label>
-                <input class="readInput" type="text" id="pais" name="pais" value="118140586" readonly tool>
-            </div>
-            <div>
-                <h4>Password</h4>
-                <label for="pais">Cédula</label>
-                <input class="defaultInput" type="password" id="pais" name="pais" value="118140586">
-            </div>
+                <h3>Inputs</h3>
+                <div>
+                    <h4>Default</h4>
+                    <label for="name">Nombre</label>
+                    <input class="defaultInput" type="text" id="name" name="name" value="Daniel Gurreck" required>
+                </div>
+                <div>
+                    <h4>Disabled</h4>
+                    <label for="pais">País</label>
+                    <input class="disabledInput" type="text" id="pais" name="pais" value="Costa Rica" disabled>
+                </div>
+                <div>
+                    <h4>Read-Only</h4>
+                    <label for="pais">Cédula</label>
+                    <input class="readInput" type="text" id="pais" name="pais" value="118140586" readonly tool>
+                </div>
+                <div>
+                    <h4>Password</h4>
+                    <label for="pais">Cédula</label>
+                    <input class="defaultInput" type="password" id="pais" name="pais" value="118140586">
+                </div>
 
-            <h3>Selects</h3>
-            <div>
-                <h4>Default</h4>
-                <label for="cars">Escoger marca</label>
-                <select name="cars" class="defaultSelect">
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select>
-            </div>
-            <div>
-                <h4>Select Grouped</h4>
-                <label for="cars">Escoger marca</label>
-                <select name="cars" class="defaultSelect">
-                <optgroup label="Swedish Cars">
-                    <option value="volvo">Volvo</option>
-                    <option value="saab">Saab</option>
-                    </optgroup>
-                    <optgroup label="German Cars">
-                    <option value="mercedes">Mercedes</option>
-                    <option value="audi">Audi</option>
-                    </optgroup>
-            </select>
-            </div>
-            <div>
-                <h4>Select Multiple</h4>
-                <label for="cars">Escoger marca</label>
-                <select name="cars" class="defaultSelect" multiple>
-                <option value="volvo">Volvo</option>
-                <option value="saab">Saab</option>
-                <option value="mercedes">Mercedes</option>
-                <option value="audi">Audi</option>
-            </select>
-            </div>
-            
-            <h3>Checkbox</h3>
-            <div class="checkbox-content">
-                <label class="container">Uno
-                    <input type="checkbox" checked="checked">
-                    <span class="checkmarkCh"></span>
-                </label>
-                <label class="container">Dos
-                    <input type="checkbox">
-                    <span class="checkmarkCh"></span>
-                </label>
-                <label class="container">Tres
-                    <input type="checkbox">
-                    <span class="checkmarkCh"></span>
-                </label>
-                <label class="container">Cuatro
-                    <input type="checkbox">
-                    <span class="checkmarkCh"></span>
-                </label>
-            </div>
+                <h3>Selects</h3>
+                <div>
+                    <h4>Default</h4>
+                    <label for="cars">Escoger marca</label>
+                    <select name="cars" class="defaultSelect">
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
+                <div>
+                    <h4>Select Grouped</h4>
+                    <label for="cars">Escoger marca</label>
+                    <select name="cars" class="defaultSelect">
+                        <optgroup label="Swedish Cars">
+                            <option value="volvo">Volvo</option>
+                            <option value="saab">Saab</option>
+                        </optgroup>
+                        <optgroup label="German Cars">
+                            <option value="mercedes">Mercedes</option>
+                            <option value="audi">Audi</option>
+                        </optgroup>
+                    </select>
+                </div>
+                <div>
+                    <h4>Select Multiple</h4>
+                    <label for="cars">Escoger marca</label>
+                    <select name="cars" class="defaultSelect" multiple>
+                        <option value="volvo">Volvo</option>
+                        <option value="saab">Saab</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="audi">Audi</option>
+                    </select>
+                </div>
 
-            <h3>Radio button</h3>
-            <div class="radio-content">
-                <label class="container">Uno
-                    <input type="radio" checked="checked" name="radio">
-                    <span class="checkmarkRb"></span>
-                </label>
-                <label class="container">Dos
-                    <input type="radio" name="radio">
-                    <span class="checkmarkRb"></span>
-                </label>
-                <label class="container">Tres
-                    <input type="radio" name="radio">
-                    <span class="checkmarkRb"></span>
-                </label>
-                <label class="container">Cuatro
-                    <input type="radio" name="radio">
-                    <span class="checkmarkRb"></span>
-                </label>
-            </div>
+                <h3>Checkbox</h3>
+                <div class="checkbox-content">
+                    <label class="container">Uno
+                        <input type="checkbox" checked="checked">
+                        <span class="checkmarkCh"></span>
+                    </label>
+                    <label class="container">Dos
+                        <input type="checkbox">
+                        <span class="checkmarkCh"></span>
+                    </label>
+                    <label class="container">Tres
+                        <input type="checkbox">
+                        <span class="checkmarkCh"></span>
+                    </label>
+                    <label class="container">Cuatro
+                        <input type="checkbox">
+                        <span class="checkmarkCh"></span>
+                    </label>
+                </div>
+
+                <h3>Radio button</h3>
+                <div class="radio-content">
+                    <label class="container">Uno
+                        <input type="radio" checked="checked" name="radio">
+                        <span class="checkmarkRb"></span>
+                    </label>
+                    <label class="container">Dos
+                        <input type="radio" name="radio">
+                        <span class="checkmarkRb"></span>
+                    </label>
+                    <label class="container">Tres
+                        <input type="radio" name="radio">
+                        <span class="checkmarkRb"></span>
+                    </label>
+                    <label class="container">Cuatro
+                        <input type="radio" name="radio">
+                        <span class="checkmarkRb"></span>
+                    </label>
+                </div>
                 <h3>Botones</h3>
                 <button type="submit" class="btn-primary btn-rounded" value="Submit">Submit</button>
                 <button type="reset" class="btn-primary btn-rounded" value="Reset">Reset</button>
-                <button type="button" onclick="javascript:alert('Cancelado');" class="btn-primary btn-rounded" value="Cancel"> Cancel</button>
-            </form>             
+                <button type="button" onclick="javascript:alert('Cancelado');" class="btn-primary btn-rounded"
+                    value="Cancel"> Cancel</button>
+            </form>
         </div>
 
     </div>
