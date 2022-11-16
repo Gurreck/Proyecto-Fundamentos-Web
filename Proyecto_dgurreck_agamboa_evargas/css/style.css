@@ -531,3 +531,15 @@ ol.b {
     grid-auto-flow: column;
     grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
 }
+
+.izquierda {
+    justify-content: left;
+}
+
+.centrado {
+    justify-content: center;
+}
+
+.derecha {
+    justify-content: right;
+}
