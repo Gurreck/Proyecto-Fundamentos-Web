@@ -317,6 +317,92 @@ button {
     padding-top: 10px;
 }
 
+/*Checkbox y RadioButton*/
+/* The container */
+.radio-content label:after, .checkbox-content label:after { content: "" } 
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+
+  }
+  
+  /* Hide the browser's default radio button */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+  /*Este*/
+  /* Create a custom radio button */
+  .checkmarkRb {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+  }
+  /* Create a custom checkbox */
+  .checkmarkCh {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+  }
+  
+  /* On mouse-over, add a grey background color */
+  .container:hover input ~ .checkmarkRb, .container:hover input ~ .checkmarkCh {
+    background-color: #ccc;
+  }
+  
+  
+  /* When the radio button is checked, add a blue background */
+  .container input:checked ~ .checkmarkRb, .container input:checked ~ .checkmarkCh {
+    background-color: #75bcc3;
+  }
+  
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .checkmarkRb:after, .checkmarkCh:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  
+  /* Show the indicator (dot/circle) when checked */
+  .container input:checked ~ .checkmarkRb:after, .container input:checked ~ .checkmarkCh:after {
+    display: block;
+  }
+  
+  /* Style the indicator (dot/circle) */
+  .container .checkmarkRb:after {
+       top: 9px;
+      left: 9px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: white;
+  }
+  /* Style the checkmark/indicator */
+  .container .checkmarkCh:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
 /* Los links de navegacion */
 .menuLateral a {
     padding: 8px 8px 8px 32px;
