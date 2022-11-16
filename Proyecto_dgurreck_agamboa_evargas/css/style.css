@@ -1,16 +1,12 @@
 html,
 body {
     margin: 0px 10px 100px 10px;
-    /* Comentario en CSS*/
     padding: 0px;
-    /*Los margenes son reducidos a 0 */
     font-family: Segoe UI, Century Gothic, Verdana, Arial;
     background: #F9F9F9;
-
     width: 80%;
     margin-left: auto;
     margin-right: auto;
-
 }
 
 .tituloB {
@@ -25,7 +21,6 @@ body {
 .cajaSeccion {
     background: #388087;
     margin: 0px 10px 0px 10px;
-    /* Comentario en CSS*/
     padding: 10px 10px 10px 10px;
     border-radius: 15px;
 }
@@ -35,7 +30,6 @@ body {
     border-radius: 15px;
     padding: 10px 10px 10px 15px;
     margin: 20px 10px 0px 10px;
-    /* Comentario en CSS*/
 }
 
 h4 {
@@ -50,7 +44,6 @@ label {
 
 input {
     border: none;
-    /* box-shadow: 0px 2px 2px 0px rgba(0,0,0,.8); */
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
     height: fit-content;
@@ -92,15 +85,13 @@ label:after {
 
 .defaultSelect {
     border: none;
-    /* box-shadow: 0px 2px 2px 0px rgba(0,0,0,.8); */
     border-radius: 5px;
     padding: 10px 15px 10px 15px;
 }
 
 
 
-
-/* Comienza tabla */
+/* Tablas */
 #cajaTabla {
     align-items: center;
 
@@ -217,7 +208,7 @@ button {
     background-color: #ecadad;
 }
 
-/* Btn group */
+/* Agrupación de botones */
 .group {
     display: inline-flex;
 }
@@ -226,7 +217,7 @@ button {
     margin: 0;
 }
 
-/* Bottons sizes */
+/* Tamaños de Botones */
 .btn-sm {
     font-size: 16px;
 }
@@ -243,7 +234,7 @@ button {
     border-radius: 5px;
 }
 
-/* Dropdown Button */
+/* boton Dropdown */
 .btn-drop:after {
     content: '▼';
     margin-left: 10px;
@@ -251,13 +242,11 @@ button {
     ;
 }
 
-/* The container <div> - needed to position the dropdown content */
 .dropdown {
     position: relative;
     display: inline-block;
 }
 
-/* Dropdown Content (Hidden by Default) */
 .dropdown-content {
     display: none;
     position: absolute;
@@ -267,7 +256,6 @@ button {
     z-index: 1;
 }
 
-/* Links inside the dropdown */
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
@@ -275,12 +263,10 @@ button {
     display: block;
 }
 
-/* Change color of dropdown links on hover */
 .dropdown-content a:hover {
     background-color: #ddd;
 }
 
-/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
     display: block;
 }
@@ -344,7 +330,6 @@ button {
 }
 
 /*Checkbox y RadioButton*/
-/* The container */
 .radio-content label:after,
 .checkbox-content label:after {
     content: ""
@@ -360,15 +345,12 @@ button {
 
 }
 
-/* Hide the browser's default radio button */
 .container input {
     position: absolute;
     opacity: 0;
     cursor: pointer;
 }
 
-/*Este*/
-/* Create a custom radio button */
 .checkmarkRb {
     position: absolute;
     top: 0;
@@ -379,7 +361,6 @@ button {
     border-radius: 50%;
 }
 
-/* Create a custom checkbox */
 .checkmarkCh {
     position: absolute;
     top: 0;
@@ -389,20 +370,16 @@ button {
     background-color: #eee;
 }
 
-/* On mouse-over, add a grey background color */
 .container:hover input~.checkmarkRb,
 .container:hover input~.checkmarkCh {
     background-color: #ccc;
 }
 
-
-/* When the radio button is checked, add a blue background */
 .container input:checked~.checkmarkRb,
 .container input:checked~.checkmarkCh {
     background-color: #75bcc3;
 }
 
-/* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmarkRb:after,
 .checkmarkCh:after {
     content: "";
@@ -410,13 +387,11 @@ button {
     display: none;
 }
 
-/* Show the indicator (dot/circle) when checked */
 .container input:checked~.checkmarkRb:after,
 .container input:checked~.checkmarkCh:after {
     display: block;
 }
 
-/* Style the indicator (dot/circle) */
 .container .checkmarkRb:after {
     top: 9px;
     left: 9px;
@@ -426,7 +401,6 @@ button {
     background: white;
 }
 
-/* Style the checkmark/indicator */
 .container .checkmarkCh:after {
     left: 9px;
     top: 5px;
@@ -439,7 +413,7 @@ button {
     transform: rotate(45deg);
 }
 
-/* Los links de navegacion */
+/* Los links de navegación */
 .menuLateral a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
@@ -456,7 +430,7 @@ button {
     color: #ccc5c5;
 }
 
-/* Style the tab */
+/* Tab */
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
@@ -464,7 +438,6 @@ button {
 }
 
 
-/* Style the buttons that are used to open the tab content */
 .tab button {
     background-color: inherit;
     float: left;
@@ -475,17 +448,15 @@ button {
     transition: 0.3s;
 }
 
-/* Change background color of buttons on hover */
 .tab button:hover {
     background-color: #ddd;
 }
 
-/* Create an active/current tablink class */
 .tab button.active {
     background-color: #ccc;
 }
 
-/* Style the tab content */
+/* contenido del tab*/
 .tabcontent {
     display: none;
     padding: 6px 12px;
@@ -514,17 +485,16 @@ button {
     transition: width 500ms ease-in-out;
 }
 
+/* Listas */
 ul,
 ol {
     padding: 8px 30px;
     border: 1px solid #ddd;
     border-radius: 12px;
-    /* width: fit-content; */
 }
 
 ul.a {
     list-style-type: circle;
-    /* border-color: #296c72; */
 }
 
 ul.b {
@@ -538,7 +508,6 @@ ol.c {
 ol.d {
     list-style-type: lower-alpha;
 }
-
 
 
 /* Opciones Generales */

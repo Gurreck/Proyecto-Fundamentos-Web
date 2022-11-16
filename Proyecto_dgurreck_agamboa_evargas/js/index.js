@@ -1,10 +1,9 @@
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
+// Para el dropdown
 function showDrop() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
 
-// Close the dropdown menu if the user clicks outside of it
+// Cerrar el dropdown si el usuario da click fuera
 window.onclick = function (event) {
   if (!event.target.matches(".btn-drop")) {
     var dropdowns = document.getElementsByClassName("dropdown-content");
@@ -18,11 +17,11 @@ window.onclick = function (event) {
   }
 };
 
-function openCity(cityName) {
+function openTab(tabName) {
   var i;
   var x = document.getElementsByClassName("tabcontent");
   for (i = 0; i < x.length; i++) {
     x[i].style.display = "none";
   }
-  document.getElementById(cityName).style.display = "block";
+  document.getElementById(tabName).style.display = "block";
 }
