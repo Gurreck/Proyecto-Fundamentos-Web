@@ -434,26 +434,30 @@ button {
 .tab {
     overflow: hidden;
     border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    border-radius: 12px 12px 0 0;
+    background-color: #6fb3b8;
 }
 
 
 .tab button {
+    color: #fff;
     background-color: inherit;
     float: left;
     border: none;
     outline: none;
     cursor: pointer;
+    margin: 0px;
     padding: 14px 16px;
     transition: 0.3s;
+
 }
 
 .tab button:hover {
-    background-color: #ddd;
+    background-color: #badfe7;
 }
 
 .tab button.active {
-    background-color: #ccc;
+    background-color: #296c72;
 }
 
 /* contenido del tab*/
@@ -461,9 +465,11 @@ button {
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
+    border-radius: 0 0 12px 12px;
     border-top: none;
 }
 
+/* Progress Bar */
 .wrapper {
     width: 500px;
 }
@@ -501,11 +507,11 @@ ul.b {
     list-style-type: square;
 }
 
-ol.c {
+ol.a {
     list-style-type: upper-roman;
 }
 
-ol.d {
+ol.b {
     list-style-type: lower-alpha;
 }
 
