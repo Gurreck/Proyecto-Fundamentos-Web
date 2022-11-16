@@ -420,3 +420,102 @@ button {
 .menuLateral a:hover {
 	color: #ccc5c5;
 }
+
+  /* Style the tab */
+  .tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+  }
+  
+  
+  /* Style the buttons that are used to open the tab content */
+  .tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tab button:hover {
+    background-color: #ddd;
+  }
+  
+  /* Create an active/current tablink class */
+  .tab button.active {
+    background-color: #ccc;
+  }
+  
+  /* Style the tab content */
+  .tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+  }
+
+  .wrapper {
+    width: 500px;
+}
+
+.progress-bar {
+    width: 100%;
+    background-color: #e0e0e0;
+    padding: 3px;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, .2);
+}
+
+.progress-bar-fill {
+    display: block;
+    height: 22px;
+    background-color: #388087;
+    border-radius: 3px;
+    
+    transition: width 500ms ease-in-out;
+}
+
+ul, ol {
+    padding: 8px 30px;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    /* width: fit-content; */
+}
+ul.a {
+    list-style-type: circle;
+    /* border-color: #296c72; */
+  }
+  
+  ul.b {
+    list-style-type: square;
+  }
+  
+  ol.c {
+    list-style-type: upper-roman;
+  }
+  
+  ol.d {
+    list-style-type: lower-alpha;
+  }
+
+
+
+/* Opciones Generales */
+.mostrar{
+    display: block;
+}
+.ocultar{
+    display: none;
+}
+
+.grid {
+    display: grid;
+  gap: 1rem;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(min-content, 1fr));
+  }
+
