@@ -48,15 +48,43 @@
                 <label for="pais">Cédula</label>
                 <input class="defaultInput" type="password" id="pais" name="pais" value="118140586">
             </div>
+
             <h3>Selects</h3>
-            <label for="cars">Select</label>
-            <select name="cars" class="defaultSelect">
+            <div>
+                <h4>Default</h4>
+                <label for="cars">Escoger marca</label>
+                <select name="cars" class="defaultSelect">
                 <option value="volvo">Volvo</option>
                 <option value="saab">Saab</option>
                 <option value="mercedes">Mercedes</option>
                 <option value="audi">Audi</option>
             </select>
-
+            </div>
+            <div>
+                <h4>Select Grouped</h4>
+                <label for="cars">Escoger marca</label>
+                <select name="cars" class="defaultSelect">
+                <optgroup label="Swedish Cars">
+                    <option value="volvo">Volvo</option>
+                    <option value="saab">Saab</option>
+                    </optgroup>
+                    <optgroup label="German Cars">
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                    </optgroup>
+            </select>
+            </div>
+            <div>
+                <h4>Select Multiple</h4>
+                <label for="cars">Escoger marca</label>
+                <select name="cars" class="defaultSelect" multiple>
+                <option value="volvo">Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+                <option value="audi">Audi</option>
+            </select>
+            </div>
+            
             <h3>Checkbox</h3>
             <div class="checkbox-content">
                 <label class="container">Uno
