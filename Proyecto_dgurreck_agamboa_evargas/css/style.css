@@ -193,6 +193,13 @@ button {
     background-color: #ecadad;
 }
 
+/* Btn group */
+.group {
+    display: inline-flex;    
+  }
+.btn-group {
+    margin: 0;
+  }
 
 /* Bottons sizes */
 .btn-sm{
